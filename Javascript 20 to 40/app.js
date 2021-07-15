@@ -48,5 +48,24 @@ var num = 35.36 ;
 console.log (num.toString().replace(".",""))
 
 
+var userName=prompt("Enter your Username");
+const checkValidName = (username) => username.match(/[\@\.\,\!]/)===null;
+while (!checkValidName(userName)){
+    alert("please enter a valid userName");   
+    userName=prompt("Enter your Input: ");
+};
+
+var search = prompt("Enter snack");
+search = search.toLowerCase();
+var snacks = ["cake", "apple pie", "cookie", "chips", "patties"];
+for (var i = 0; i <= 4; i++) {
+if (search === snacks[i]) {
+alert("Snack found");
+}else{
+    alert("Snack not found");
+}break
+}
+
+
 
 
