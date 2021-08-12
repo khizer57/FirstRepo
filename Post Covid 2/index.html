@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-between py-5">
+        <div>
+            <h2>HTML QUIZ</h2>
+        </div>
+        <div>
+    <h3>Question <span class="fs-1" id="currentQuestionNo">3</span>/<span id="totalQuestionNo">10</span></h3>
+        </div>
+    </div>
+    <div class="container light shadow rounded p-4">
+        <h3 id="question">---------------</h3>
+    </div>
+    <div class="container light shadow rounded p-5 my-1">
+        <div class="row text-center m-4" id="answerParent">
+            <div class="col-md-6 py-4 my-3 border border-dark rounded-pill">
+                    <button class="btn btn-block btn-dark px-5 rounded-pill py-2">Option 1</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container dark shadow rounded p-4 text-dark my-3">
+        <div class="text-end">
+            <button id="next" onclick="nextQuestion()" class="btn btn-block btn-success px-5 rounded-pill">Next</button>
+        </div>
+    </div>
+    <div class="footer fixed-bottom dark p-1 text-center">
+        <progress id="progress" class="w-75" value="10" max="100"></progress>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
